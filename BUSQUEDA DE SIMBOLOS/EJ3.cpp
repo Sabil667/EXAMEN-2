@@ -9,6 +9,15 @@ public:
         entorno_[clave] = valor;
     }
 
+    //Buscar un símbolo en el entorno
+    std::optional<int> lookup(const std::string& clave) const {
+        auto it = entorno_.find(clave);
+        if (it != entorno_.end()) {
+            return it->second; // Símbolo encontrado
+        } else {
+            return std::nullopt; // Símbolo no encontrado
+        }
+    }
 
 
 
