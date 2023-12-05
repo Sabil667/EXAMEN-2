@@ -57,7 +57,9 @@ int main(){
         //Verificar si un símbolo existe
         if(entorno.existe("variable2")){
             std::cout << "variable2 existe en el entorno." << std::endl;
-
+        }else{
+            std::cout << "variable2 no existe en el entorno." << std::endl;
+        }
 
 
 
