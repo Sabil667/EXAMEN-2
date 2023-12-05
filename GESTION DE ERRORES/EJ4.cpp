@@ -25,6 +25,9 @@ public:
     }
 
 private:
+    std::map<std::string, int> entorno_;
+};
+
 
 
 
