@@ -34,6 +34,12 @@ public:
         }
     }
 
+    //Verificar si un símbolo existe en el entorno
+    bool existe(const std::string& clave) const {
+        return entorno_.find(clave) != entorno_.end();
+    }
+
+
 
 
 
