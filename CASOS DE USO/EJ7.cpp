@@ -60,6 +60,20 @@ void procesarConfiguraciones(const Entorno& entorno) {
         std::cerr << "Error: " << e.what() << std::endl;
     }
 }
+int main() {
+    // Crear un entorno de juego
+    Entorno entorno;
+
+    // Configurar opciones de juego
+    entorno.insert("nivelDificultad", 2);
+    entorno.insert("velocidadPersonaje", 5.0);
+    entorno.insert("nombreJugador", std::string("Jugador1"));
+
+    // Procesar configuraciones
+    procesarConfiguraciones(entorno);
+
+
+}
 
 
 
@@ -70,4 +84,3 @@ void procesarConfiguraciones(const Entorno& entorno) {
 
 
 
-};
