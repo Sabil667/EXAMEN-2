@@ -36,7 +36,9 @@ int main(){
 
     Environment env;
     //Agregar simbolos a la tabla
-    env.addSymbol("g", 10);
+    env.addSymbol("g", 40);
+    env.addSymbol("h", 60);
+
 
 
 
