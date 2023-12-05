@@ -39,6 +39,10 @@ int main(){
     env.addSymbol("g", 40);
     env.addSymbol("h", 60);
 
+    //Obtener valores de la tabla
+    std::cout << "Value of g: " << env.getSymbolValue("g") << std::endl;
+
+
 
 
 
