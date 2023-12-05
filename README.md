@@ -1,6 +1,8 @@
 # EXAMEN-2
 Examen hecho por Ghali Sabil, link:https://github.com/Sabil667/EXAMEN-2.git
 
+Fuentes: He usado chatgpt y copilot para la complementacion de codigos.
+
 
 
 
