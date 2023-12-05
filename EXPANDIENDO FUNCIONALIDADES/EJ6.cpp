@@ -24,6 +24,16 @@ public:
         }
     }
 
+    //Eliminar un símbolo del entorno
+    void eliminar(const std::string& clave) {
+        auto it = entorno_.find(clave);
+        if (it != entorno_.end()) {
+            entorno_.erase(it);
+        } else {
+            throw std::out_of_range("No se puede eliminar la clave que no existe en el entorno.");
+        }
+    }
+
 
 
 
