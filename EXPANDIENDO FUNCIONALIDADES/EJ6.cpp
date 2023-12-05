@@ -57,6 +57,12 @@ int main(){
         std::cout << "Valor de variable2: " << entorno.lookup("variable2") << std::endl;
         std::cout << "Valor de variable3: " << entorno.lookup("variable3") << std::endl;
 
+        //Eliminar símbolos del entorno
+        entorno.eliminar("variable2");
+
+        //Verificar si un símbolo existe
+        std::cout << "variable1 existe: " << entorno.existe("variable1") << std::endl;
+
 
 
 
