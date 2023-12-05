@@ -23,6 +23,11 @@ private:
     std::map<std::string, int> entorno_;
 };
 
+int main(){
+    Entorno entorno;
+
+
+
 
 
 
