@@ -31,6 +31,9 @@ int main(){
     entorno.insert("variable2", 7);
     entorno.insert("variable3", 10);
 
+    //Buscar símbolos en el entorno
+    std::cout << "Valor de variable2: " << entorno.lookup("variable2").value_or(-1) << std::endl;
+
 
 
 
