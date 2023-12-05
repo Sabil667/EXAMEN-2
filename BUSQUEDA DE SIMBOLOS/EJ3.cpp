@@ -34,6 +34,13 @@ int main(){
     //Buscar símbolos en el entorno
     std::cout << "Valor de variable2: " << entorno.lookup("variable2").value_or(-1) << std::endl;
 
+    //Intentar buscar un símbolo que no existe
+    auto resultado = entorno.lookup("noExiste");
+    if (resultado.has_value()) {
+        std::cout << "Valor de noExiste: " << resultado.value() << std::endl;
+    } else {
+        std::cout << "noExiste no encontrado en el entorno." << std::endl;
+    }
 
 
 
