@@ -28,6 +28,8 @@ public:
     }
 
 private:
+std::map<std::string, int> symbols; // Tabla de símbolos
+};
 
 
 
