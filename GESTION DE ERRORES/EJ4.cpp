@@ -28,7 +28,16 @@ private:
     std::map<std::string, int> entorno_;
 };
 
+int main(){
+    Entorno entorno;
 
+    try{
+        //Insertar símbolos en el entorno
+
+
+
+
+    }
 
 
 
