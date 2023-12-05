@@ -31,6 +31,15 @@ int main(){
     std::cout << "Entorno inicial:" << std::endl;
     entorno.imprimirEntorno();
 
+//Insertar un nuevo simbolo sin conflictos
+    entorno.insert("nuevaVariable", 8);
+
+    //Imprimir el entorno después de la inserción
+    std::cout << "\nEntorno después de la inserción:" << std::endl;
+    entorno.imprimirEntorno();
+
+    return 0;
+
 
 
 
