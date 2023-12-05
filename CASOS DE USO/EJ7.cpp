@@ -45,6 +45,17 @@ void procesarConfiguraciones(const Entorno& entorno) {
         // Obtener y procesar una configuración de punto flotante
         double velocidadPersonaje = entorno.obtenerConfiguracion<double>("velocidadPersonaje");
         std::cout << "Velocidad del personaje: " << velocidadPersonaje << std::endl;
+        // Obtener y procesar una configuración de cadena de texto
+        std::string nombreJugador = entorno.obtenerConfiguracion<std::string>("nombreJugador");
+        std::cout << "Nombre del jugador: " << nombreJugador << std::endl;
+
+        // Verificar la existencia de una configuración
+        if (entorno.existeConfiguracion("tiempoLimite")) {
+            int tiempoLimite = entorno.obtenerConfiguracion<int>("tiempoLimite");
+            std::cout << "Tiempo límite: " << tiempoLimite << " segundos" << std::endl;
+        } else {
+            std::cout << "No se ha configurado un tiempo límite." << std::endl;
+        }
 
 
 
