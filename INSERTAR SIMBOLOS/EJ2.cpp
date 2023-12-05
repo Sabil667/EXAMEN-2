@@ -19,6 +19,14 @@ private:
     std::map<std::string, int> entorno_;
 };
 
+int main(){
+    Entorno entorno;
+
+    //Insertar simbolos en el entorno
+    entorno.insert("variable1", 23);
+    entorno.insert("variable2", 7);
+    entorno.insert("variable3", 10);
+
 
 
 
