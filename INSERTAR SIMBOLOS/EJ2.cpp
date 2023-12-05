@@ -27,6 +27,10 @@ int main(){
     entorno.insert("variable2", 7);
     entorno.insert("variable3", 10);
 
+    //Imprimir el entorno
+    std::cout << "Entorno inicial:" << std::endl;
+    entorno.imprimirEntorno();
+
 
 
 
