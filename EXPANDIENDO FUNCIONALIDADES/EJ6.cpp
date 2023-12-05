@@ -14,6 +14,16 @@ public:
         }
     }
 
+    //Buscar un símbolo en el entorno
+    int lookup(const std::string& clave) const {
+        auto it = entorno_.find(clave);
+        if (it != entorno_.end()) {
+            return it->second; // Símbolo encontrado
+        } else {
+            throw std::out_of_range("La clave no existe en el entorno.");
+        }
+    }
+
 
 
 
