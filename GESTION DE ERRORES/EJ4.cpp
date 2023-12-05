@@ -41,14 +41,16 @@ int main(){
         entorno.insert("variable1", 42);
     }catch(const std::invalid_argument& e){
         std::cerr << "Error al insertar: " << e.what() << std::endl;
+    }
 
-
+    try{
+        //Buscar símbolos en el entorno
+        std::cout << "Valor de variable2: " << entorno.lookup("variable2") << std::endl;
 
 
 
 
     }
-
 
 
 
