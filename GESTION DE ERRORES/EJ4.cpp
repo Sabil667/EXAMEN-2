@@ -33,6 +33,10 @@ int main(){
 
     try{
         //Insertar símbolos en el entorno
+        entorno.insert("variable1", 42);
+        entorno.insert("variable2", 56);
+        entorno.insert("variable3", 78);
+
 
 
 
