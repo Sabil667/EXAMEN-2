@@ -37,6 +37,11 @@ int main(){
         entorno.insert("variable2", 9);
         entorno.insert("variable3", 8);
 
+        //Intentar insertar un símbolo ya existente
+        entorno.insert("variable1", 42);
+    }catch(const std::invalid_argument& e){
+        std::cerr << "Error al insertar: " << e.what() << std::endl;
+
 
 
 
