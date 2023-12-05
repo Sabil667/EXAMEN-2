@@ -66,6 +66,11 @@ int main(){
         } else {
             std::cout << "variable2 no existe en el entorno." << std::endl;
         }
+}catch(const std::invalid_argument& e){
+    std::cerr << "Error al insertar: " << e.what() << std::endl;
+}catch(const std::out_of_range& e){
+    std::cerr << "Error: " << e.what() << std::endl;
+
 
 
 
