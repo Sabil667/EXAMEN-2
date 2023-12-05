@@ -8,6 +8,14 @@ public:
         entorno_[clave] = valor;
     }
 
+    //Imprimir el entorno
+    void imprimirEntorno() const {
+        for (const auto& par : entorno_) {
+            std::cout << par.first << ": " << par.second << std::endl;
+        }
+    }
+
+
 
 
 
