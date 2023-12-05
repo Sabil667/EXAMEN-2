@@ -10,6 +10,10 @@ public:
     //Destructor
     ~Environment() {}
 
+    //Forma para agregar simbolo a una tabla de simbolos.
+    void addSymbol(const std::string& name, int value) {
+        symbols[name] = value;
+    }
 
 
 
