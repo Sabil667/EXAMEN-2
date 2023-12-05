@@ -26,6 +26,16 @@ public:
         }
     }
 
+    // Método para verificar si una configuración existe en el entorno
+    bool existeConfiguracion(const std::string& clave) const {
+        return entorno_.find(clave) != entorno_.end();
+    }
+
+private:
+    std::map<std::string, std::variant<int, double, std::string>> entorno_;
+};
+
+
 
 
 
