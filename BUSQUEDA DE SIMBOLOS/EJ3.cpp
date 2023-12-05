@@ -37,9 +37,9 @@ int main(){
     //Intentar buscar un símbolo que no existe
     auto resultado = entorno.lookup("noExiste");
     if (resultado.has_value()) {
-        std::cout << "Valor de noExiste: " << resultado.value() << std::endl;
+        std::cout << "Valor de variable 4: " << resultado.value() << std::endl;
     } else {
-        std::cout << "noExiste no encontrado en el entorno." << std::endl;
+        std::cout << "variable 4 no encontrado en el entorno." << std::endl;
     }
 
 
