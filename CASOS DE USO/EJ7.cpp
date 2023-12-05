@@ -15,6 +15,18 @@ public:
         }
     }
 
+    // Método para obtener una configuración del entorno
+    template <typename T>
+    T obtenerConfiguracion(const std::string& clave) const {
+        auto it = entorno_.find(clave);
+        if (it != entorno_.end()) {
+            return std::get<T>(it->second); // Configuración encontrada
+        } else {
+            throw std::out_of_range("La clave no existe en el entorno.");
+        }
+    }
+
+
 
 
 
