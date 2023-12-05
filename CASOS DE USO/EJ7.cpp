@@ -56,6 +56,12 @@ void procesarConfiguraciones(const Entorno& entorno) {
         } else {
             std::cout << "No se ha configurado un tiempo límite." << std::endl;
         }
+    } catch (const std::out_of_range& e) {
+        std::cerr << "Error: " << e.what() << std::endl;
+    }
+}
+
+
 
 
 
