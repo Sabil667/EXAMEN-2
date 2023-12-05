@@ -54,7 +54,7 @@ void procesarConfiguraciones(const Entorno& entorno) {
             int tiempoLimite = entorno.obtenerConfiguracion<int>("tiempoLimite");
             std::cout << "Tiempo límite: " << tiempoLimite << " segundos" << std::endl;
         } else {
-            std::cout << "No se ha configurado un tiempo límite." << std::endl;
+            std::cout << "No se ha configurado un tiempo limite." << std::endl;
         }
     } catch (const std::out_of_range& e) {
         std::cerr << "Error: " << e.what() << std::endl;
