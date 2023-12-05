@@ -34,6 +34,10 @@ std::map<std::string, int> symbols; // Tabla de símbolos
 //Ejemplo
 int main(){
 
+    Environment env;
+    //Agregar simbolos a la tabla
+    env.addSymbol("g", 10);
+
 
 
 
