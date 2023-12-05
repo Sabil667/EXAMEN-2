@@ -51,6 +51,11 @@ int main(){
         entorno.insert("variable2", 9);
         entorno.insert("variable3", 8);
 
+        //Eliminar un símbolo
+        entorno.eliminar("variable2");
+
+
+
 
 
 
