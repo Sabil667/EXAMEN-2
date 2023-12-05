@@ -47,6 +47,8 @@ int main(){
         //Buscar símbolos en el entorno
         std::cout << "Valor de variable2: " << entorno.lookup("variable2") << std::endl;
 
+        //Intentar buscar un símbolo que no existe
+
 
 
 
