@@ -43,6 +43,25 @@ private:
     std::map<std::string, int> entorno_;
 };
 
+int main(){
+    Entorno entorno;
+
+    try{
+        //Insertar símbolos de diferentes tipos en el entorno
+        entorno.insert("variable1", 42);
+        entorno.insert("variable2", 3.14);
+        entorno.insert("variable3", std::string("Hola"));
+
+        //Buscar símbolos de diferentes tipos en el entorno
+
+
+
+
+    }
+
+
+
+
 
 
 
