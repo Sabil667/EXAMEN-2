@@ -50,7 +50,8 @@ int main(){
         //Intentar buscar un símbolo que no existe
 
         std::cout << "Valor de noExiste: " << entorno.lookup("noExiste") << std::endl;
-
+    }catch(const std::out_of_range& e){
+        std::cerr << "Error al buscar: " << e.what() << std::endl;
 
 
     }
