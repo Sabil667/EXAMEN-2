@@ -39,6 +39,9 @@ public:
         return entorno_.find(clave) != entorno_.end();
     }
 
+private:
+    std::map<std::string, int> entorno_;
+};
 
 
 
