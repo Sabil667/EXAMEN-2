@@ -42,7 +42,7 @@ int main(){
     //Obtener valores de la tabla
     std::cout << "Value of g: " << env.getSymbolValue("g") << std::endl;
     std::cout << "Value of h: " << env.getSymbolValue("h") << std::endl;
-
+    std::cout << "Value of i: " << env.getSymbolValue("i") << std::endl; // Debería imprimir un mensaje de error
 
 
 
