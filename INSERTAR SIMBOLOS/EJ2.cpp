@@ -35,7 +35,7 @@ int main(){
     entorno.insert("nuevaVariable", 8);
 
     //Imprimir el entorno después de la inserción
-    std::cout << "\nEntorno después de la inserción:" << std::endl;
+    std::cout << "\nEntorno despues de la insercion:" << std::endl;
     entorno.imprimirEntorno();
 
     return 0;
