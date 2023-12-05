@@ -26,6 +26,12 @@ private:
 int main(){
     Entorno entorno;
 
+    //Insertar símbolos en el entorno
+    entorno.insert("variable1", 13);
+    entorno.insert("variable2", 7);
+    entorno.insert("variable3", 10);
+
+
 
 
 
