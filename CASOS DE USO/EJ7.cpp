@@ -35,6 +35,16 @@ private:
     std::map<std::string, std::variant<int, double, std::string>> entorno_;
 };
 
+// Función para procesar configuraciones del entorno
+void procesarConfiguraciones(const Entorno& entorno) {
+    try {
+        // Obtener y procesar una configuración entera
+        int nivelDificultad = entorno.obtenerConfiguracion<int>("nivelDificultad");
+        std::cout << "Nivel de dificultad: " << nivelDificultad << std::endl;
+
+        // Obtener y procesar una configuración de punto flotante
+        double velocidadPersonaje = entorno.obtenerConfiguracion<double>("velocidadPersonaje");
+        std::cout << "Velocidad del personaje: " << velocidadPersonaje << std::endl;
 
 
 
