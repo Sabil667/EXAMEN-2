@@ -54,6 +54,11 @@ int main(){
         //Eliminar un símbolo
         entorno.eliminar("variable2");
 
+        //Verificar si un símbolo existe
+        if(entorno.existe("variable2")){
+            std::cout << "variable2 existe en el entorno." << std::endl;
+
+
 
 
 
