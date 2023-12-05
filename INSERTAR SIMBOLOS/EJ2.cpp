@@ -38,7 +38,6 @@ int main(){
     std::cout << "\nEntorno despues de la insercion:" << std::endl;
     entorno.imprimirEntorno();
 
-    return 0;
 
 
 
